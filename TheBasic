@@ -1,0 +1,40 @@
+##基础
+###入门
+开发React Native程序分两种情况
+
++ 程序运行平台:`iOS` `Android`
++ 开发平台:`macOS` `Linux` `Windows`
+
+**注：`iOS`程序只能在`macOS`上开发,`Android`则在三个开发平台上都可以开发**
+下面介绍在window下开发Android应用
+
+####依赖工具
+
+ + Node.js(js运行环境)
+ + the React Native command line interface (运行React Native命令)
+ + Android Studio(使用这个开发工具是为了启动一个Android虚拟设备)
+
+`Node.js`可以到官网下载安装,`React Native CLI`通过Nodejs中自带的npm安装,`Android Studio`的安装流程可参考<http://facebook.github.io/react-native/docs/getting-started.html#android-development-environment>,`Android Studio`的安装过程中遇到问题可在[这里查看一下](http://bbs.reactnative.cn/topic/130/%E6%96%B0%E6%89%8B%E6%8F%90%E9%97%AE%E5%89%8D%E5%85%88%E6%9D%A5%E8%BF%99%E9%87%8C%E7%9C%8B%E7%9C%8B-react-native%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
+
+####启动Android虚拟设备
+![启动按钮](http://facebook.github.io/react-native/img/react-native-tools-avd.png)
+
+在Android Studio中点击上述按钮即可启动Android虚拟设备,只有虚拟设备开启后才能运行React Native程序.
+
+####测试React Native安装情况
+
+在命令行中依次运行如下代码:
+```cmd
+		react-native init AwesomeProject
+		cd AwesomeProject
+		react-native start
+```
+然后打开一个新的命令行,在AwesomeProject文件夹下执行:
+```cmd
+		react-native run-android
+```
+
+
+1 build.gradle 中buildToolsVersion版本号不对应
+2 node版本升级后出现问题
+
